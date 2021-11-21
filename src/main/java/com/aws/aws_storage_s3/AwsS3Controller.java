@@ -21,7 +21,7 @@ public class AwsS3Controller {
     @GetMapping("/test")
     public String test(){
 
-        AWSCredentials credentials = new BasicAWSCredentials("AKIATQJHTOH32Q7ORYVR", "RjZ1C4my1k4NX9MrE3F9+vPPQAa/D1Ztapj9jYy4");
+        AWSCredentials credentials = new BasicAWSCredentials("<secret key>", "<secret>");
 
         AmazonS3 client = AmazonS3ClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(credentials)).withRegion(Regions.AP_SOUTH_1).build();
 
